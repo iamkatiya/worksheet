@@ -1,0 +1,42 @@
+extends pug/base
+
+prepend vars
+	//-
+
+append vars
+	//-
+
+block content
+	section.profile
+		.container
+			.profile__about.about
+				.about__photo
+					img(src="images/profile.jpg" alt="")
+				.about__inputs
+					input(type="text" placeholder="Имя" value="Екатерина")
+					input(type="text" placeholder="Дата рождения" value="29.06.1999")
+					input(type="text" placeholder="Город" value="Санкт-Петербург")
+					input(type="email" placeholder="Контактные данные" value="iamkatiya@mail.ru")
+				.about__shtamp
+					img(src="images/sprites/svg/Shape 6.svg" alt="")
+			.profile__skills.skills
+				.skills__head
+					|Навыки
+				.skills__items.skill
+					.skill__item
+						input(class="custom-checkbox" type="checkbox" id="checkbox" name="checkbox" value="checkbox")
+						label(for="checkbox")
+							|html 5
+			.profile__js-level.js-level
+				.js-level__speedometer.speedometer
+					img.speedometer__firstitem(src="images/sprites/svg/speed-1.svg" alt="")
+					img.speedometer__seconditem(src="images/sprites/svg/speed-2.svg" alt="")
+					img.speedometer__thirditem(src="images/sprites/svg/speed-3.svg" alt="")
+					.speedometer__box.box
+						.box__arrow
+						.box__dot
+				.js-level__sign.level-sign
+					.level-sign__head
+						|Мой уровень владения <br> JavaScript
+					.level-sign__count
+						|100

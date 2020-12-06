@@ -1,0 +1,82 @@
+@media (max-width: 1050px) {
+	.profile {
+		margin: 20px;
+		padding: 60px 70px;
+
+		&__about,
+		&__skills,
+		&__js-level {
+			background-size: cover;
+		}
+	}
+}
+
+@media (max-width: 750px) {
+	.profile {
+		padding: 20px;
+		&__about {
+			padding: 15px;
+		}
+
+		&__skills {
+			padding: 15px 15px 0;
+		}
+
+		&__js-level {
+			flex-wrap: wrap;
+			padding: 40px 15px;
+		}
+	}
+
+	.about {
+		flex-wrap: wrap;
+		justify-content: center;
+
+		&__inputs {
+			flex: 100%;
+		}
+
+		&__photo {
+			flex: inherit;
+			margin: 0 0 10px;
+		}
+
+		&__shtamp {
+			display: none;
+		}
+	}
+
+	.skill {
+		&__item {
+			flex: calc(100% / 3);
+			margin-bottom: 15px;
+		}
+	}
+
+	.level-sign {
+		flex: 100%;
+		margin: 15px 0 0;
+	}
+
+	.js-level {
+		&__speedometer {
+			margin: 0 auto;
+		}
+
+		&__sign {
+			text-align: center;
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	.profile {
+		margin: 0;
+	}
+
+	.skill {
+		&__item {
+			flex: 50%;
+		}
+	}
+}
